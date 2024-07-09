@@ -6,11 +6,11 @@ import DetailPage from "./pages/DetailPage";
 function App() {
   return (
     <Router>
-      <div className="p-5 md:p-10 lg:p-16 xl:p-20">
+      <div className="p-5 md:p-10 lg:p-14 xl:p-20">
         <Header />
         <Routes>
           <Route path="/" element={<MainPage />} />
-          <Route path="/movies/:id" element={<DetailPage />} />
+          <Route path="/movie/:id" element={<DetailPage />} />
         </Routes>
       </div>
     </Router>
